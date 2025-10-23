@@ -60,7 +60,7 @@ def build_chain():
     })
 
     prompt_template = """Usa SOLO el siguiente contexto para responder la pregunta.
-Si no está en el contexto, responde: "No lo sé con la información disponible."
+Si no está en el contexto, responde de manera amable y como si fuera una conversacion natural, sigue el contexto del usuario."
 
 Contexto:
 {context}

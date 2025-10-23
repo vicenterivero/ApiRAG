@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  rag_api:
+    build: .
+    container_name: rag_menu_api
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    restart: always
